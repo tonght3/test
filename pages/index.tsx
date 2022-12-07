@@ -1,6 +1,11 @@
 import type { NextPage } from 'next'
 import React, { useEffect, useRef } from 'react'
 
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+import LightGallery from 'lightgallery/react';
+
 const Home: NextPage = () => {
   const fileTempl = useRef<any>(null);
   const imageTempl = useRef<any>(null);
@@ -44,7 +49,7 @@ const Home: NextPage = () => {
   };
 
   const cancelUpload = () => {
-    if(gallery.current.children.length <= 0) return;
+    if (gallery.current.children.length <= 0) return;
     while (gallery.current.children.length > 0) {
       gallery.current.lastChild.remove();
     }
@@ -116,8 +121,29 @@ const Home: NextPage = () => {
     FILES.current[objectURL] = file;
   }
 
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+  };
+
   return (
     <div>
+
+
+      <div className="App">
+        <LightGallery
+          onInit={onInit}
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+        >
+          <a href="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png">
+            <img alt="img1" src="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png" />
+          </a>
+          <a href="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png">
+            <img alt="img2" src="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png" />
+          </a>
+        </LightGallery>
+      </div>
+
       <div className="h-screen overflow-hidden flex items-center justify-center" style={{ backgroundColor: "#edf2f7" }}>
         <div className="bg-gray-500 h-screen w-screen sm:px-8 md:px-16 sm:py-8">
           <main className="container mx-auto max-w-screen-lg h-full">
