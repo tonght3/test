@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/magic-zoom.scss';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 import type { AppProps } from 'next/app'
 
