@@ -13,7 +13,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { Search } from "@mui/icons-material";
+import { Search, ArrowBack } from "@mui/icons-material";
 import React from "react";
 import { TransitionProps } from "@mui/material/transitions";
 import { Close } from "@mui/icons-material";
@@ -55,7 +55,7 @@ const SearchC = () => {
           onClose={handleClose}
           TransitionComponent={Transition}
         >
-          <AppBar sx={{ position: "relative" }}>
+          <AppBar sx={{ position: "sticky" }}>
             <Toolbar sx={{ backgroundColor: "green" }}>
               <IconButton
                 edge="start"
@@ -63,15 +63,17 @@ const SearchC = () => {
                 onClick={handleClose}
                 aria-label="close"
               >
-                <Close />
+                <ArrowBack />
               </IconButton>
               <InputBase
+                type="search"
                 sx={{
                   ml: 1,
                   mr: 1,
                   flex: 1,
                   ".MuiInputBase-input": {
-                    borderRadius: "8px",
+                    borderRadius: "32px",
+                    fontSize: '14px'
                   },
                 }}
                 placeholder="Nhập thông tin tìm kiếm"
@@ -86,7 +88,232 @@ const SearchC = () => {
               </IconButton>
             </Toolbar>
           </AppBar>
-          <List sx={{ p: 0}}>
+          <List sx={{ p: 0 }}>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText primary="Phone ringtone" />
+            </ListItem>
+            <Divider />
+            <ListItem button>
+              <ListItemIcon>
+                <Search />
+              </ListItemIcon>
+              <ListItemText
+                primary="Default notification ringtone"
+              />
+            </ListItem>
             <ListItem button>
               <ListItemIcon>
                 <Search />
