@@ -49,7 +49,7 @@ const RichTextField = ({
     const [editorState, setEditorState] = useState<any>(null);
     useEffect(() => {
         console.log('watch name: ', watch(name))
-        const blocksFromHtml = convertFromHTML(watch(name));
+        const blocksFromHtml = convertFromHTML('Hey this editor rocks 😀');
         console.log('blocksFromHtml: ', blocksFromHtml);
         const { contentBlocks, entityMap } = blocksFromHtml;
         const contentState = ContentState.createFromBlockArray(contentBlocks, entityMap);
