@@ -47,15 +47,20 @@ const SearchC = () => {
         aria-label="search"
         color="inherit"
       > */}
-      <div className="flex gap-1 items-center rounded-full w-80 bg-slate-100 py-1 px-2 cursor-pointer" onClick={handleClickOpen}>
+      <div
+        className="flex gap-1 items-center rounded-full w-min md:w-80 bg-slate-100 md:py-1 py-1 px-1 md:px-2 cursor-pointer"
+        onClick={handleClickOpen}
+      >
         <Search />
-        <Typewriter
-          options={{
-            strings: ['Mua vui vẻ', 'Thuận mua vừa bán'],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+        <div className="hidden md:block">
+          <Typewriter
+            options={{
+              strings: ["Mua vui vẻ", "Thuận mua vừa bán"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </div>
       </div>
       {/* </IconButton> */}
       <div>
@@ -66,7 +71,7 @@ const SearchC = () => {
           TransitionComponent={Transition}
         >
           <AppBar sx={{ position: "sticky" }}>
-            <Toolbar sx={{ backgroundColor: "green", px:'8px' }}>
+            <Toolbar sx={{ backgroundColor: "green", px: "8px" }}>
               <IconButton
                 edge="start"
                 color="inherit"
