@@ -25,7 +25,8 @@
     "react-draft-wysiwyg": "^1.15.0",
     "react-hook-form": "^7.41.3",
     "react-no-ssr": "^1.1.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "18.8.2",

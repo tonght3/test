@@ -17,6 +17,7 @@ import { Search, ArrowBack } from "@mui/icons-material";
 import React from "react";
 import { TransitionProps } from "@mui/material/transitions";
 import { Close } from "@mui/icons-material";
+import Typewriter from "typewriter-effect";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -40,14 +41,23 @@ const SearchC = () => {
 
   return (
     <div className="p-4">
-      <IconButton
+      {/* <IconButton
         onClick={handleClickOpen}
         size="large"
         aria-label="search"
         color="inherit"
-      >
+      > */}
+      <div className="flex gap-1 items-center rounded-full w-80 bg-slate-100 py-1 px-2 cursor-pointer" onClick={handleClickOpen}>
         <Search />
-      </IconButton>
+        <Typewriter
+          options={{
+            strings: ['Mua vui vẻ', 'Thuận mua vừa bán'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
+      {/* </IconButton> */}
       <div>
         <Dialog
           fullScreen
@@ -56,7 +66,7 @@ const SearchC = () => {
           TransitionComponent={Transition}
         >
           <AppBar sx={{ position: "sticky" }}>
-            <Toolbar sx={{ backgroundColor: "green" }}>
+            <Toolbar sx={{ backgroundColor: "green", px:'8px' }}>
               <IconButton
                 edge="start"
                 color="inherit"
@@ -73,7 +83,7 @@ const SearchC = () => {
                   flex: 1,
                   ".MuiInputBase-input": {
                     borderRadius: "32px",
-                    fontSize: '14px'
+                    fontSize: "14px",
                   },
                 }}
                 placeholder="Nhập thông tin tìm kiếm"
@@ -81,7 +91,7 @@ const SearchC = () => {
               />
               <IconButton
                 type="button"
-                sx={{ p: "10px", color: "#fff" }}
+                sx={{ p: "4px", color: "#fff" }}
                 aria-label="search"
               >
                 <Search onClick={handleClose} aria-label="search" />
@@ -100,9 +110,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -115,9 +123,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -130,9 +136,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -145,9 +149,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -160,9 +162,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -175,9 +175,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -190,9 +188,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -205,9 +201,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -220,9 +214,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -235,9 +227,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -250,9 +240,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -265,9 +253,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -280,9 +266,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -295,9 +279,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -310,9 +292,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -325,9 +305,7 @@ const SearchC = () => {
               <ListItemIcon>
                 <Search />
               </ListItemIcon>
-              <ListItemText
-                primary="Default notification ringtone"
-              />
+              <ListItemText primary="Default notification ringtone" />
             </ListItem>
           </List>
         </Dialog>
